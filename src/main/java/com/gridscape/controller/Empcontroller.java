@@ -70,7 +70,7 @@ public class Empcontroller {
 		if(file.isEmpty())
 		{
 			System.out.println("File is empty");
-			System.out.println("File is empty");
+
 		}
 		else 
 		{
