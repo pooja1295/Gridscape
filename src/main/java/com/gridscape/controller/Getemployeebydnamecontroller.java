@@ -29,7 +29,9 @@ public class Getemployeebydnamecontroller {
 	@GetMapping("/employee/{dname}")
 	public ResponseEntity<List<Employee>> getEmployeeByDepartment(@PathVariable("dname") String name)
 	{
+		System.out.println("jhgg");
 		return new ResponseEntity<List<Employee>>(emprepo.getEmployeeByDepName(name), HttpStatus.OK);
+
 	}
 
 }

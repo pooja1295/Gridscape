@@ -61,7 +61,7 @@ public class HomeController {
 		
 		return "home";
 	}
-	
+
 	//update controller by id
 	@PostMapping("/update/{id}")
 	public String updatedetail(@PathVariable("id")Integer id,Model m,Principal p) 
@@ -70,6 +70,7 @@ public class HomeController {
 		Employee emp1 = this.emprepo.findById(id).get();
 		m.addAttribute("emp", emp1);
 		System.out.println(emp1);
+		System.out.println("hello");
 		return "updateemp";
 	}
 	
